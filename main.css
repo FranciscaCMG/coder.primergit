@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas:  
+    "header"
+    "main"
+    "footer"
+    ;
+
+}
+
+
+/* Estilos header */
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    margin-bottom:10px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+
+}
+header {
+    /* Estilos area wrapper general */
+    grid-area: header ;
+
+    /* Estilos customs de seccion*/
+    background-color: #decac3;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Estilos navegador */
+
+.menu ul {
+    
+    list-style-type: none;
+    text-align: center;
+    width:auto;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.menu li {
+    display: inline;
+    color: #fff;
+    padding:15px;
+    font-size: 18px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color:#fff;
+}
+.menu a:hover{
+    background-color: #955c3e;
+    color:beige;
+    padding: 5px;
+}
+
+
+/* Estilos main */
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "formulario-pedir"
+    "productos-favoritos"
+    
+    ;
+}
+
+.formulario-pedir {
+    grid-area: formulario-pedir;
+}
+
+.pedir {
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    max-width: 100%;
+    background-color: white;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #900c3f;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 24px;
+    color: #C70039;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-size: 20px;
+    color: #581845;
+}
+
+h4 {
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-size: 15px;
+    color: #000;
+}
+.pedir h2 {
+    padding: 1vh;
+}
+
+.pedir p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #000;
+    padding: 1px;
+}
+
+.text-pedir {
+    font-size: 30px;
+
+}
+.pedir form input {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border-color: #C70039;
+}
+
+.selecion-locales {
+    font-family: 'Dosis', sans-serif;
+    font-size:20px ;
+    width: 50%;
+}
+
+
+
+.productos-favoritos {
+    grid-area: productos-favoritos;
+
+}
+
+.productos-favoritos h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 2vh;
+}
+
+.categorias {
+    text-align: center;
+
+}
+.categoria-img  {
+    width: 100%;
+}
+
+.img-productos-fav {
+    width: auto;
+    max-width: 80%;
+}
+
+.productos-favoritos {
+    grid-area: productos-favoritos;
+
+}
+
+.productos-favoritos h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 2vh;
+}
+
+.categorias {
+    text-align: center;
+
+}
+.categoria-img  {
+    width: 100%;
+}
+
+.img-productos-fav {
+    width: auto;
+    max-width: 80%;
+}
+
+.video {
+    display: none;
+}
+
+/* Estilos footer */
+
+.enlaceWsp {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+
+
+}
+
+.suscripcion {
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-suscripcion{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.formulario-suscripcion input {
+    font-family: 'Dosis', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    border-color: #C70039;
+    
+}
+
+.redes a {
+    text-decoration: none;
+    color:#C70039;
+
+
+}
+.redes a:hover{
+    background-color: #C70039;
+    color:beige;
+    padding: 5px;
+}
+
+
+.redes {
+    background-color: beige;
+    padding: 20px;
+}
+
+.redes img {
+    background-color: #fff;
+}
+
+.direccion div {
+    display: inline-block;
+    border: 5px #000;
+
+}
+
+.direccion .direccion_texto {
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    color: #000;
+    text-align: left;
+
+}
+
+.direccion .direccion_texto p {
+    background-color: beige;
+    padding: 5px;
+}
+
+.direccion .direccion_texto span {
+    color: #900c3f ;
+
+}
+
+
+
+.politica p { 
+    font-family: 'Dosis', sans-serif;
+    font-size: 10px;
+    color: #000;
+    text-align: left;
+}
+
+.politica span {
+    color: #C70039;
+}
+
+.politica div {
+    text-align: center;
+}
+
+.contenedor div {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.historia div {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #faebd7;
+    
+}
+
+.historia div p {
+    padding: 30px;
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+
+}
+
+.imagenes_amigas {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.imagenes_amigas img {
+    padding: 20px;
+}
+
+/* A partir de acá usamos las media quires*/
+
+@media screen and (min-width: 768px) {
+    .main-wrapper {
+        
+        display: grid;
+        grid-template-areas:  
+        "header"
+        "main"
+        "footer"
+        ;
+    
+    }
+
+    header {
+
+        /* Estilos customs de seccion*/
+        flex-direction: row;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+
+    .logo {
+        display: inline-block;
+        text-align: center;
+        margin-bottom:10px;
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+    }
+
+
+    .video {
+        display: block;
+    }
+
+    h1 {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        font-size: 35px;
+        color: #900c3f;
+    }
+    
+    h2 {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        font-size: 30px;
+        color: #C70039;
+    }
+
+
+    h3 {
+        font-family: 'Lobster', cursive;
+        text-align: left;
+        font-size: 25px;
+        color: #581845;
+    }
+    
+    h4 {
+        font-family: 'Lobster', cursive;
+        text-align: left;
+        font-size: 20px;
+        color: #000;
+    }
+
+}
